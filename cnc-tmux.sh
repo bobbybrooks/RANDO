@@ -11,7 +11,7 @@ tmux new-session -d -s $session -n monitor # main window
 tmux new-window -t $session:2 -n working   # scratch page
 
 tmux select-window -t $session:2
-#tmux send-keys "echo working stuff" C-m # not sending anything
+tmux send-keys "cat deploy.txt" C-m
 
 tmux select-window -t $session:1
 
