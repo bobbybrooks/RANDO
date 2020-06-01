@@ -40,12 +40,13 @@ wget https://bit.ly/ares-cnc-tmux-conf
 mv ~/ares-cnc-tmux-conf ~/.tmux.conf
 
 # Make deploy.txt
+echo '' >> ~/deploy.txt
 echo 'To deploy implant' >> ~/deploy.txt
 echo 'scp ~/agent/<IMPLANT_NAME> <USER>@<TARGET_IP>:/<TARGET_DIR>/' >> ~/deploy.txt
-
+echo '' >> ~/deploy.txt
 
 echo 'Now run:'
-echo '~/ares-cnc-tmux'
+echo '~/ares-tmux.sh'
 echo ''
 echo 'Press Ctrl-A and Tab # to select a tab'
 echo ''
