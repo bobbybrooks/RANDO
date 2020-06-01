@@ -1,5 +1,6 @@
 #!/bin/sh
 
+
 # set up tmux
 tmux start-server
 
