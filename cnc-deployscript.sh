@@ -42,7 +42,7 @@ mv ~/ares-cnc-tmux-conf ~/.tmux.conf
 # Make deploy.txt
 echo '' >> ~/deploy.txt
 echo 'To deploy implant' >> ~/deploy.txt
-echo 'scp ~/agent/<IMPLANT_NAME> <USER>@<TARGET_IP>:/<TARGET_DIR>/' >> ~/deploy.txt
+echo 'scp ~/Ares/agent/<IMPLANT_NAME> <USER>@<TARGET_IP>:/<TARGET_DIR>/' >> ~/deploy.txt
 echo '' >> ~/deploy.txt
 
 echo 'Now run:'
