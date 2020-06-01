@@ -45,8 +45,18 @@ echo 'To deploy implant' >> ~/deploy.txt
 echo 'scp ~/Ares/agent/<IMPLANT_NAME> <USER>@<TARGET_IP>:/<TARGET_DIR>/' >> ~/deploy.txt
 echo '' >> ~/deploy.txt
 
-echo 'Now run:'
-echo '~/ares-tmux.sh'
+
+echo 'Now run:' >> /etc/motd
+echo '~/ares-tmux.sh' >> /etc/motd
+echo '' >> /etc/motd
+echo 'Press Ctrl-A and Tab # to select a tab' >> /etc/motd
+echo '' >> /etc/motd
+
+
 echo ''
-echo 'Press Ctrl-A and Tab # to select a tab'
+echo 'Now reboot and then log back in'
 echo ''
+read -rsp $'Press any key to continue...\n' -n1 key
+echo ''
+shutdown -r now
+
