@@ -46,10 +46,14 @@ echo 'scp ~/Ares/agent/<IMPLANT_NAME> <USER>@<TARGET_IP>:/<TARGET_DIR>/' >> ~/de
 echo '' >> ~/deploy.txt
 
 
-echo 'Now run:' >> /etc/motd
-echo '~/ares-tmux.sh' >> /etc/motd
 echo '' >> /etc/motd
-echo 'Press Ctrl-A and Tab # to select a tab' >> /etc/motd
+echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' >> /etc/motd
+echo 'Now run:' >> /etc/motd
+echo '~/ares-cnc-tmux' >> /etc/motd
+echo '' >> /etc/motd
+echo 'Inside tmux:' >> /etc/motd
+echo '  Press [Ctrl-A] then [tab_number] to select a tab' >> /etc/motd
+echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' >> /etc/motd
 echo '' >> /etc/motd
 
 
